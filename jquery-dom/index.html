@@ -74,7 +74,28 @@
 </div>
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <script>
-  // Add your code here!
+  console.log("Let's get ready to party with jQuery!");
+
+$('article img').addClass('image-center');
+
+$('article p').last().remove();
+
+$('#title').css("fontSize",(Math.random() * 100));
+
+$('ol').append("<li>Hibbity Skibbity</li>");
+
+$('aside').empty().HTML("<p>We humbly apologize for including an inconsequential list here</p>");
+
+$('.form-control').on('keyup', function () {
+  let inputVal1 = $(".form-control").eq(0).val();
+  let inputVal2 = $(".form-control").eq(1).val();
+  let inputVal3 = $(".form-control").eq(2).val();
+  $('body').css('background-color', `rgb(${inputVal1}, ${inputVal2}, ${inputVal3})`);
+});
+
+$('img').on('click', fucntion() {
+    $(this).remove();
+});
 </script>
 </body>
 
